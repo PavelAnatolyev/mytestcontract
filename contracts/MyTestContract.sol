@@ -26,7 +26,7 @@ contract MyTestContract is ERC721PausableUpgradeable, AccessControlUpgradeable, 
         return super.supportsInterface(interfaceId);
     }
 
-    function mintNFT(address _recipient, uint256 _newItemId) public onlyRole(MINTER_ROLE) returns (uint256)
+    function mintNFT(address _recipient, uint256 _newItemId) public whenNotPaused onlyRole(MINTER_ROLE) returns (uint256)
     {
         // TODO: add _newItemId verification
         _safeMint(_recipient, _newItemId);
