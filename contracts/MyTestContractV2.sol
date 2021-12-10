@@ -7,6 +7,7 @@ import "@openzeppelin/contracts-upgradeable/access/AccessControlUpgradeable.sol"
 import "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol";
 import "@openzeppelin/contracts-upgradeable/token/ERC721/extensions/ERC721PausableUpgradeable.sol";
 
+// TODO: think about adding Burnable
 contract MyTestContractV2 is ERC721PausableUpgradeable, AccessControlUpgradeable, OwnableUpgradeable {
 
     string private _baseURIextended;
