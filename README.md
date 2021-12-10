@@ -1,6 +1,6 @@
 # MyTestContract
 
-This is sample upgradeable
+This is a sample upgradeable smart contract for minting NFTs.
 
 Create `.env` file with the following variables (check `.env.example` file):
 ```
